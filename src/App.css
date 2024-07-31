@@ -1,0 +1,99 @@
+
+.books-container {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.books-container h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+.books-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.books-container th, .books-container td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.books-container th {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.books-container tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+
+.books-container .book-status.checked-out {
+  color: #d9534f;
+}
+
+.books-container .book-status.available {
+  color: #5bc0de;
+}
+
+
+.books-container button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.books-container button:hover {
+  background-color: #0056b3;
+}
+
+
+.search-filter {
+  margin-bottom: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .books-container table, .books-container th, .books-container td {
+    display: block;
+    width: 100%;
+  }
+
+  .books-container thead {
+    display: none;
+  }
+
+  .books-container tr {
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .books-container td {
+    text-align: right;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  .books-container td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-weight: bold;
+  }
+}
