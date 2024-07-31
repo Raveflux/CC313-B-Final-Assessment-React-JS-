@@ -1,0 +1,24 @@
+[1mdiff --git a/src/components/Books.jsx b/src/components/Books.jsx[m
+[1mindex 20f06ac..e8ef7da 100644[m
+[1m--- a/src/components/Books.jsx[m
+[1m+++ b/src/components/Books.jsx[m
+[36m@@ -12,8 +12,8 @@[m [mconst getRandomAuthor = () => {[m
+ [m
+ const Books = () => {[m
+   const initialBooks = [[m
+[31m-    { title: 'Noli Me Tangere', author: getRandomAuthor(), dueDate: getRandomDate(), status: 'Checked Out' },[m
+[31m-    { title: 'El Filibusterismo', author: getRandomAuthor(), dueDate: null, status: 'Checked Out' },[m
+[32m+[m[32m    { title: 'Noli Me Tangere', author: getRandomAuthor(), dueDate: getRandomDate(), status: 'Available' },[m
+[32m+[m[32m    { title: 'El Filibusterismo', author: getRandomAuthor(), dueDate: null, status: 'Available' },[m
+     { title: 'Dekada \'70', author: getRandomAuthor(), dueDate: getRandomDate(), status: 'Checked Out' },[m
+     { title: 'The Woman Who Had Two Navels', author: getRandomAuthor(), dueDate: null, status: 'Available' },[m
+     { title: 'Banaag at Sikat', author: getRandomAuthor(), dueDate: getRandomDate(), status: 'Checked Out' },[m
+[36m@@ -21,7 +21,7 @@[m [mconst Books = () => {[m
+     { title: 'Crying Ladies', author: getRandomAuthor(), dueDate: getRandomDate(), status: 'Checked Out' },[m
+     { title: 'Sa Mga Kuko ng Liwanag', author: getRandomAuthor(), dueDate: getRandomDate(), status: 'Checked Out' },[m
+     { title: 'Si Amapola sa 65 na Kabanata', author: getRandomAuthor(), dueDate: getRandomDate(), status: 'Checked Out' },[m
+[31m-    { title: 'Ang Mga Kaibigan ni Mama Susan', author: getRandomAuthor(), dueDate: null, status: 'Checked Out' },[m
+[32m+[m[32m    { title: 'Ang Mga Kaibigan ni Mama Susan', author: getRandomAuthor(), dueDate: null, status: 'Available' },[m
+   ];[m
+ [m
+   const [books, setBooks] = useState(initialBooks);[m

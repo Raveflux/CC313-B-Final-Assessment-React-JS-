@@ -12,8 +12,8 @@ const getRandomAuthor = () => {
 
 const Books = () => {
   const initialBooks = [
-    { title: 'Noli Me Tangere', author: getRandomAuthor(), dueDate: getRandomDate(), status: 'Checked Out' },
-    { title: 'El Filibusterismo', author: getRandomAuthor(), dueDate: null, status: 'Checked Out' },
+    { title: 'Noli Me Tangere', author: getRandomAuthor(), dueDate: getRandomDate(), status: 'Available' },
+    { title: 'El Filibusterismo', author: getRandomAuthor(), dueDate: null, status: 'Available' },
     { title: 'Dekada \'70', author: getRandomAuthor(), dueDate: getRandomDate(), status: 'Checked Out' },
     { title: 'The Woman Who Had Two Navels', author: getRandomAuthor(), dueDate: null, status: 'Available' },
     { title: 'Banaag at Sikat', author: getRandomAuthor(), dueDate: getRandomDate(), status: 'Checked Out' },
@@ -21,7 +21,7 @@ const Books = () => {
     { title: 'Crying Ladies', author: getRandomAuthor(), dueDate: getRandomDate(), status: 'Checked Out' },
     { title: 'Sa Mga Kuko ng Liwanag', author: getRandomAuthor(), dueDate: getRandomDate(), status: 'Checked Out' },
     { title: 'Si Amapola sa 65 na Kabanata', author: getRandomAuthor(), dueDate: getRandomDate(), status: 'Checked Out' },
-    { title: 'Ang Mga Kaibigan ni Mama Susan', author: getRandomAuthor(), dueDate: null, status: 'Checked Out' },
+    { title: 'Ang Mga Kaibigan ni Mama Susan', author: getRandomAuthor(), dueDate: null, status: 'Available' },
   ];
 
   const [books, setBooks] = useState(initialBooks);
